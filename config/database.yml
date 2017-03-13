@@ -11,21 +11,21 @@ default: &default
 
 development:
   <<: *default
-  database: iic3101_t1_db_dev
+  database: iic3101_task1_db_dev
   username: postgres
-  assword: root
+  password: root
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: iic3101_t1_db_test
+  database: iic3101_task1_db_test
   username: postgres
-  assword: root
+  password: root
 
 production:
   <<: *default
-  database: iic3101_t1_db_prd
-  username: iic3101_t1_user
+  database: iic3101_task1_db_prd
+  username: iic3101_task1_user
   password: <%= ENV["SECRET_KEY_BASE"] %>
